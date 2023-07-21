@@ -62,7 +62,10 @@ print(f or f)
 
 #### Addition???
 Recall that computers are just 1's and 0's. All the way down to the core.
-That will always be true. And you can see that 
+That will always be true. And you can see that:
+```python
+print(2 + True + True + True)
+```
 
 ### str's
 Strings. These are, well, strings. Words.
@@ -86,4 +89,21 @@ We didn't unlock this yet.
 
 ## Functions
 
+Returns vs. prints????
+
+args, kwargs....eventually
+
 ## Loops
+
+
+
+### Goals
+1. how to scrape
+2. how to code
+3. how to do statistical analysis
+4. visulization
+
+
+
+
+
