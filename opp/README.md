@@ -92,6 +92,53 @@ print(name + ' ' + last_name)
 We didn't unlock this yet. See loops.
 
 ## If's
+Programming is about inherently about logic. If statements help define that logic.
+
+There are three types of ifs.
+
+### if
+The standard lone `if`. This checks if some condition is true.
+
+If the `if` statement evaluates to `True`, the indented block will be run.
+```python
+name = "jake"
+if name == "jake":
+  print("Hello " + name)
+```
+
+Note that you can do different types of logical conditions in the if statement.
+```python
+if name != "jake":
+  print("This will not be printed.")
+
+if not name == "jake":
+  print("What do we think this will do? How is this different?")
+```
+
+### else
+`Else` is a default. If this is true, do this. Otherwise, do this.
+```python
+x = 10
+if x <= 0:
+  print("X is a negative number")
+else:
+  print("X must be positive")
+```
+
+### elif
+You are allowed to specify multiple if conditions back to back to back. You can do this with an else if, or `elif`.
+```python
+x = 10
+
+if x < 0:
+  print("X is less than 0")
+elif x == 5:
+  print("X is EXACTLY 5")
+elif x > 10:
+  print("X is greater than 10")
+else:
+  print("hmmmm. I wonder what X can be?")
+```
 
 ## Functions
 
