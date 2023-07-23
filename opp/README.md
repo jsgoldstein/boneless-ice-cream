@@ -17,7 +17,9 @@ name = "opp"
 print("Hello " + name + "!")
 ```
 Variables are here to help declare things. We can assign a variable a value and it will keep track of it for us.
-This can help us do math if we wanted to:
+Recall that this concept is just the "left" side of the equals sign (`=`).
+
+Variables are the stepping stone to everything. See how they can help us do math too:
 ```python
 x = 10
 print(x * 3)
@@ -26,6 +28,8 @@ But it can also store other things if we need to.
 
 ## Simple Types
 What are the other things that can be stored?
+Recall that this is the "right" side of the equals sign (`=`).
+
 Well, let's start simple
 1. `int`
 3. `str`
@@ -45,8 +49,10 @@ z = x / y
 ```
 
 #### float's
-Okay. I lied before. There is another type but it didn't feel like you needed to know this explictly up-front.
+Okay. I lied before. There is another type but it didn't feel like you needed to know this explicitly up-front.
 If you do division, you might run into something like `2.2`. When a number has a decimal, that's called a `float`.
+
+Note that `//` is how to divide with ints to get ints. `/` will get you a `float`.
 
 ### bool's
 True. False. That's all there is to it.
@@ -83,7 +89,7 @@ print(name + ' ' + last_name)
 ```
 
 #### Random Access
-We didn't unlock this yet.
+We didn't unlock this yet. See loops.
 
 ## If's
 
@@ -94,16 +100,3 @@ Returns vs. prints????
 args, kwargs....eventually
 
 ## Loops
-
-
-
-### Goals
-1. how to scrape
-2. how to code
-3. how to do statistical analysis
-4. visulization
-
-
-
-
-
