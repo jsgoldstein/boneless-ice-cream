@@ -141,9 +141,54 @@ else:
 ```
 
 ## Functions
+A function is just defining a smaller unit of work.
+Functions take input and produce and output.
 
-Returns vs. prints????
+Let's start with a math example
+```
+f(x) = x + 1
+f(5) = 6
+```
 
-args, kwargs....eventually
+Functions in code work in a very similar way. They take input `parameters` and `return` a result.
+
+```python
+def add_five(x):
+  return x + 5
+
+print(add_five(1))
+print(add_five(5))
+```
+
+Remember! Don't get confused between `print` and `return`!
+`return` is the output of the smaller unit of work, the output of the function.
+`print` is telling the human who is using the computer this is the current state of this variable.
+Printing is NOT a returning.
+
+You can have functions with multiple inputs
+```python
+def add(x, y):
+  return x + y
+
+def mult(x, y):
+  return x * y
+```
+
+Remember that you can also use if's inside functions. You can even call functions inside other functions.
+You can also return anything that you want.
+```python
+def fun_math(x, y):
+  x = add(x, y)
+  y = mult(x, y)
+  if mult(x, y) > 100:
+    return True
+  elif add(x, y) > 25:
+    return True
+  else:
+    return False
+```
+
+### Args & Kwargs
+You did not unlock this yet. This is not part of the intro.
 
 ## Loops
