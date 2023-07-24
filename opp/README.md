@@ -192,3 +192,49 @@ def fun_math(x, y):
 You did not unlock this yet. This is not part of the intro.
 
 ## Loops
+Before we can even start loops, we need to learn a bit about lists.
+
+### Lists
+A list is a collection of elements.
+```python
+list_1 = [1, 2, 3, 4]
+```
+
+You can put anything in a list if you wanted to. Items can repeat themselves or by any type.
+```python
+confusing_list = ["Mr. Sir", 1, True, 2, -1, None, None, "Mr. Sir"]
+```
+
+You can even put lists inside of lists.
+```python
+list_of_list = [[1, 2, 3,], [2, 4, 6], [3, 5, 8]]
+```
+
+Now we are gearing up for loops. 
+Here's a formal definition that I stole off the internet:
+Loops are a way to specify a sequence of instructions that are continually repeated until a certain condition is met.
+
+In English, do something a whole buncha times in a row.
+
+### For
+```python
+for number in list_1:
+  print(number)
+
+for number in range(10):
+  print(number)
+
+for i in ["jake", "was", "here"]:
+  print(i)
+
+for i in "jake was here":
+  print(i)
+```
+
+### While
+```python
+start = 0
+while start < 10:
+  start = start + 1
+```
+
