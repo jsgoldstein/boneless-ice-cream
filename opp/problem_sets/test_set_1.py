@@ -2,7 +2,7 @@ import unittest
 
 from statistics import mean as _mean_
 
-from problem_set_1 import (
+from set_1 import (
     print_str_5_times,
     str_5_times,
     str_n_times,
