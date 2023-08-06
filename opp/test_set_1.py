@@ -36,33 +36,34 @@ class TestSuite1(unittest.TestCase):
         self.assertEqual(str_n_times(' ', 1), ' ')
 
     def test_str_5_times_as_list(self):
-        self.assertEquals(str_5_times_as_list('cat'), ["cat", "cat", "cat", "cat", "cat"])
-        self.assertEquals(str_5_times_as_list(''), ["", "", "", "", ""])
+        self.assertEqual(str_5_times_as_list('cat'), ["cat", "cat", "cat", "cat", "cat"])
+        self.assertEqual(str_5_times_as_list(''), ["", "", "", "", ""])
 
     def test_str_n_times_as_list(self):
-        self.assertEquals(str_n_times_as_list('cat', 2), ['cat', 'cat'])
-        self.assertEquals(str_n_times_as_list('cat', 0), [])
+        self.assertEqual(str_n_times_as_list('cat', 2), ['cat', 'cat'])
+        self.assertEqual(str_n_times_as_list('cat', 0), [])
         with self.assertRaises(Exception) as e:
             str_n_times_as_list('cat', -1)
 
     def test_flip_str(self):
-        self.assertEquals(flip_str('cat'), 'tac')
-        self.assertEquals(flip_str(''), '')
-        self.assertEquals(flip_str('racecar'), 'racecar')
+        self.assertEqual(flip_str('cat'), 'tac')
+        self.assertEqual(flip_str(''), '')
+        self.assertEqual(flip_str('racecar'), 'racecar')
 
     def test_add_all_nums(self):
-        self.assertEquals(add_all_nums([1, 2, 3]), sum([1, 2, 3]))
-        self.assertEquals(add_all_nums([1, -1, 1, -1]), sum([1, -1, 1, -1]))
-        self.assertEquals(add_all_nums([-1, -1, -1, -1]), sum([-1, -1, -1, -1]))
-        self.assertEquals(add_all_nums([20, ]), sum([20, ]))
-        self.assertEquals(add_all_nums(List()), sum(List()))
+        self.assertEqual(add_all_nums([1, 2, 3]), sum([1, 2, 3]))
+        self.assertEqual(add_all_nums([1, -1, 1, -1]), sum([1, -1, 1, -1]))
+        self.assertEqual(add_all_nums([-1, -1, -1, -1]), sum([-1, -1, -1, -1]))
+        self.assertEqual(add_all_nums([20, ]), sum([20, ]))
+        self.assertEqual(add_all_nums(list()), sum(list()))
 
     def test_mean(self):
-        self.assertEquals(mean([1, 2, 3]), _mean_([1, 2, 3]))
-        self.assertEquals(mean([1, -1, 1, -1]), _mean_([1, -1, 1, -1]))
-        self.assertEquals(add_all_nums([-1, -1, -1, -1]), _mean_([-1, -1, -1, -1]))
-        self.assertEquals(add_all_nums([20, ]), _mean_([20, ]))
-        self.assertEquals(add_all_nums(List()), _mean_(List()))
+        self.assertEqual(mean([1, 2, 3]), _mean_([1, 2, 3]))
+        self.assertEqual(mean([1, -1, 1, -1]), _mean_([1, -1, 1, -1]))
+        self.assertEqual(mean([-1, -1, -1, -1]), _mean_([-1, -1, -1, -1]))
+        self.assertEqual(mean([20, ]), _mean_([20, ]))
+        with self.assertRaises(Exception) as e:
+            mean(list())
 
 if __name__ == '__main__':
     # Run with `python -m pytest`
